@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .nav-tabs {
+            border-bottom: none;
+        }
+        .nav-link {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-link.active {
+            background-color: #6a1b9a;
+            color: white;
+        }
+        .nav-link:hover {
+            background-color: #8e24aa;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-area">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="index.html">
+                <img src="Web Design Assets/Sidebar/Maximize/Home.svg" alt="Home">
+            </a>
+            <a href="news.html">
+                <img src="Web Design Assets/Sidebar/Maximize/News.svg" alt="News">
+            </a>
+            <a href="offer.html">
+                <img src="Web Design Assets/Sidebar/Maximize/Offer.svg" alt="Offer">
+            </a>
+            <a href="contactus.html">
+                <img src="Web Design Assets/Sidebar/Maximize/ContactUs.svg" alt="Contact Us">
+            </a>
+            <a href="aboutus.html">
+                <img src="Web Design Assets/Sidebar/Maximize/AboutUs.svg" alt="About Us">
+            </a>
+            <a href="more.html">
+                <img src="Web Design Assets/Sidebar/Maximize/More.svg" alt="More">
+            </a>
+            <div class="account-buttons">
+                <a href="login.html"><button class="btn btn-dark">Login</button></a>
+                <a href="login.html"><button class="btn btn-light">Register</button></a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>More</h1>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="privacy-policy-tab" data-bs-toggle="tab" data-bs-target="#privacy-policy" type="button" role="tab" aria-controls="privacy-policy" aria-selected="true">Privacy Policy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cookie-policy-tab" data-bs-toggle="tab" data-bs-target="#cookie-policy" type="button" role="tab" aria-controls="cookie-policy" aria-selected="false">Cookie Policy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="user-agreement-tab" data-bs-toggle="tab" data-bs-target="#user-agreement" type="button" role="tab" aria-controls="user-agreement" aria-selected="false">User Agreement</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active section" id="privacy-policy" role="tabpanel" aria-labelledby="privacy-policy-tab">
+                    <h2>Privacy Policy</h2>
+                    <p>Welcome to K-GamE. Your privacy is important to us, and we are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data.</p>
+                    <ol>
+                        <li><strong>Information We Collect</strong>
+                            <ul>
+                                <li>Personal Information: When you register, subscribe, or contact us, we may collect information like your name, email address, and contact details.</li>
+                                <li>Usage Data: We collect information about how you use our website, such as pages visited, time spent, and actions taken.</li>
+                                <li>Cookies and Tracking Technologies: We use cookies to enhance user experience and track website performance.</li>
+                            </ul>
+                        </li>
+                        <li><strong>How We Use Your Data</strong>
+                            <ul>
+                                <li>To provide and improve our services.</li>
+                                <li>To send you updates, newsletters, or promotional content.</li>
+                                <li>To analyze site usage and optimize our content.</li>
+                                <li>To ensure website security and compliance with legal obligations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Data Sharing</strong>
+                            <p>We do not sell or share your personal information with third parties except for:</p>
+                            <ul>
+                                <li>Service Providers: To help us run our website (e.g., hosting, analytics).</li>
+                                <li>Legal Obligations: If required by law or to protect our rights.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Data Security</strong>
+                            <p>We implement industry-standard measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+                        </li>
+                        <li><strong>Your Rights</strong>
+                            <ul>
+                                <li>Access and correct your personal data.</li>
+                                <li>Request data deletion or restriction of use.</li>
+                                <li>Opt-out of receiving promotional emails.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade section" id="cookie-policy" role="tabpanel" aria-labelledby="cookie-policy-tab">
+                    <h2>Cookie Policy</h2>
+                    <p>This Cookie Policy explains how K-GamE uses cookies and similar technologies to enhance your experience.</p>
+                    <ol>
+                        <li><strong>What Are Cookies?</strong>
+                            <p>Cookies are small text files stored on your device when you visit a website. They help websites function efficiently and provide insights into user behavior.</p>
+                        </li>
+                        <li><strong>Types of Cookies We Use</strong>
+                            <ul>
+                                <li>Essential Cookies: Necessary for the website to function properly.</li>
+                                <li>Analytics Cookies: Help us understand how users interact with the site (e.g., Google Analytics).</li>
+                                <li>Advertising Cookies: Used to show personalized ads based on your browsing behavior.</li>
+                            </ul>
+                        </li>
+                        <li><strong>How We Use Cookies</strong>
+                            <ul>
+                                <li>To remember your preferences and settings.</li>
+                                <li>To analyze traffic and improve functionality.</li>
+                                <li>To deliver relevant content and advertisements.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Managing Cookies</strong>
+                            <p>You can accept or reject cookies through your browser settings. Please note that disabling cookies may affect the functionality of our website.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="tab-pane fade section" id="user-agreement" role="tabpanel" aria-labelledby="user-agreement-tab">
+                    <h2>User Agreement</h2>
+                    <ol>
+                        <li><strong>Acceptance of Terms</strong>
+                            <p>By accessing or using our website, you agree to abide by these terms. If you do not agree, please discontinue use immediately.</p>
+                        </li>
+                        <li><strong>Website Usage</strong>
+                            <ul>
+                                <li>You agree not to use our site for unlawful activities or in a way that harms others.</li>
+                                <li>You may not attempt to hack, disrupt, or exploit our website in any manner.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Content Ownership</strong>
+                            <p>All content, including text, images, and videos, is the property of K-GamE. Unauthorized use, reproduction, or distribution is prohibited.</p>
+                        </li>
+                        <li><strong>Disclaimer of Liability</strong>
+                            <p>We strive to provide accurate information but do not guarantee the completeness or accuracy of all content. Use the website at your own risk.</p>
+                        </li>
+                        <li><strong>Termination</strong>
+                            <p>We reserve the right to terminate or suspend your access to the website if you violate these terms.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 K-GamE. All rights reserved. </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+    	.content {
+    		display: flex;
+    		flex-direction: column;
+    	}
+
+    	h1 {
+		    font-size: 3rem;
+		    margin-bottom: 10px;
+		    animation: textGlow 1.5s infinite alternate;
+		}
+
+		.highlights {
+			width: 100%;
+			min-height: 40%;
+			background-color: black;
+		    margin-bottom: 30px;
+		    clip-path: inset(0);
+		    overflow: hidden;
+		    min-width: 400px;
+		}
+
+		.highlight-item {
+			display: none;
+			position: relative;
+			height: 100%;
+			width: 100%;
+			animation: slideInRight 0.1s;
+		}
+
+		.highlight-item h2 {
+			bottom: 20px;
+			left: 20px;
+			position: absolute;
+			z-index: 2;
+			text-decoration: underline;
+			background-color: rgba(0, 0, 0, 0.6);
+			padding: 10px 20px;
+			border-radius: 10px;
+		}
+
+		.highlight-image {
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.top-news {
+		    display: flex;
+		    flex-direction: row;
+		    gap: 20px;
+		}
+
+		.top-news .news-item {
+			flex: 1;
+		    display: flex;
+		    flex-direction: column;
+		    background: rgba(255, 255, 255, 0.1);
+		    border-radius: 10px;
+		    padding: 20px;
+		    text-align: center;
+		    animation: fadeInUp 1s ease-in-out;
+		    min-width: 150px;
+		}
+
+		.top-news .news-item img {
+		    width: 100%;
+		    height: 50%;
+		    object-fit: cover;
+		    border-radius: 30px;
+		}
+
+		.top-news .news-item img:hover {
+		    transform: scale(1.1);
+		}
+
+		.top-news .news-item h3 {
+		    margin: 15px 0 10px;
+		    transition: color 0.3s;
+		}
+
+		.top-news .news-item:hover h3 {
+		    color: #ffcc00;
+		}
+
+		.latest-news {
+		    margin-top: 40px;
+		    display: flex;
+		    flex-direction: column;
+		}
+
+		.latest-news .news-item {
+		    display: flex;
+		    flex-direction: row;
+		    background: rgba(255, 255, 255, 0.1);
+		    border-radius: 10px;
+		    padding: 20px;
+		    text-align: center;
+		    animation: fadeInUp 1s ease-in-out;
+		    min-width: 150px;
+		}
+
+		.latest-news .latest-news-text {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			text-align: left;
+		}
+
+		.latest-news .news-item img {
+		    width: 300px;
+		    height: 150px;
+		    object-fit: cover;
+		    border-radius: 30px;
+		}
+
+		@keyframes slideInRight {
+		    from {
+		        transform: translateX(100%);
+		    }
+		    to {
+		        transform: translateX(0);
+		    }
+		}
+
+		@keyframes slideOutLeft {
+		    from {
+		        transform: translateX(0);
+		    }
+		    to {
+		        transform: translateX(-100%);
+		    }
+		}
+    </style>
+</head>
+<body>
+    <div class="main-area">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="index.html">
+                <img src="Web Design Assets/Sidebar/Maximize/Home.svg" alt="Home">
+            </a>
+            <a href="news.html">
+                <img src="Web Design Assets/Sidebar/Maximize/News.svg" alt="News">
+            </a>
+            <a href="offer.html">
+                <img src="Web Design Assets/Sidebar/Maximize/Offer.svg" alt="Offer">
+            </a>
+            <a href="contactus.html">
+                <img src="Web Design Assets/Sidebar/Maximize/ContactUs.svg" alt="Contact Us">
+            </a>
+            <a href="aboutus.html">
+                <img src="Web Design Assets/Sidebar/Maximize/AboutUs.svg" alt="About Us">
+            </a>
+            <a href="more.html">
+                <img src="Web Design Assets/Sidebar/Maximize/More.svg" alt="More">
+            </a>
+            <div class="account-buttons">
+				<a href="login.html"><button class="btn btn-dark">Login</button></a>
+				<a href="login.html"><button class="btn btn-light">Register</button></a>
+			</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>Highlights</h1>
+            <div class="highlights">
+            	<div class="highlight-item" onclick="window.location.href='article1.html'">
+            		<img class="highlight-image" src="Web Design Assets/Article/ArticleSample1.avif">
+            		<h2>
+            			Genshin Impact: How to unlock Pyro Traveler
+            		</h2>
+            	</div>
+            	<div class="highlight-item" onclick="window.location.href='article2.html'">
+            		<img class="highlight-image" src="Web Design Assets/Article/ArticleSample1.webp">
+            		<h2>
+            			Hideo Kojima Offered Death Stranding 2 Update
+            		</h2>
+            	</div>
+            	<div class="highlight-item" onclick="window.location.href='article4.html'">
+            		<img class="highlight-image" src="Web Design Assets/Article/ArticleSample6.avif">
+            		<h2>
+            			Castlevania: How to Find the Best Early-Game Equipment in Symphony of the Night
+            		</h2>
+            	</div>
+            	<script type="text/javascript">
+					var myIndex = 0;
+					var x = document.getElementsByClassName("highlight-item");
+					x[myIndex].style.display = "block";
+
+					function carousel() {
+						x[myIndex].animate([
+							{
+								transform: "translateX(0)"
+							},
+							{
+								transform: "translateX(-100%)"
+							}
+						], {
+							duration: 100
+						});
+
+						setTimeout(carousel2, 100);
+					}
+
+					function carousel2() {
+						x[myIndex].style.display = "none";
+
+						myIndex++;
+						if (myIndex >= x.length) {
+							myIndex = 0;
+						}
+
+						x[myIndex].style.display = "block";
+
+						setTimeout(carousel, 4000);
+					}
+
+					setTimeout(carousel, 4000);
+            	</script>
+            </div>
+            <h2>Top News</h2>
+            <div class="top-news">
+                <div class="news-item" onclick="window.location.href='article1.html'">
+                    <img src="Web Design Assets/Article/ArticleSample1.avif" alt="News 1">
+                    <h3>Genshin Impact</h3>
+                    <p>How to unlock pyro language.</p>
+                </div>
+                <div class="news-item" onclick="window.location.href='article2.html'">
+                    <img src="Web Design Assets/Article/ArticleSample1.webp" alt="News 2">
+                    <h3>Death Stranding 2</h3>
+                    <p>Hideo Kojima Offered Death Stranding 2 Update</p>
+                </div>
+                <div class="news-item" onclick="window.location.href='article3.html'">
+                    <img src="Web Design Assets/Article/ArticleSample5.avif" alt="News 3">
+                    <h3>MiSide</h3>
+                    <p>How to Find All Mita Cartridges</p>
+                </div>
+            </div>
+
+            <div class="latest-news">
+                <h2>Latest News</h2>
+                <div class="news-item" onclick="window.location.href='article5.html'">
+                    <img src="Web Design Assets/Article/OneShot1.png" alt="News 1">
+                    <div class="latest-news-text">
+	                    <h3>OneShot</h3>
+	                    <p>The game you shouldn't know about.</p>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 K-GamE. All rights reserved. </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
