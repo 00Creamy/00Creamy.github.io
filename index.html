@@ -13,6 +13,13 @@
     		flex-direction: column;
     	}
 
+    	.logo {
+    		width: 150px;
+    		margin-left: auto;
+    		margin-right: auto;
+    		filter: drop-shadow(0 0 10px #ffffff);
+    	}
+
     	h1 {
 		    font-size: 3rem;
 		    margin-bottom: 10px;
@@ -124,6 +131,10 @@
 		    border-radius: 30px;
 		}
 
+		.latest-news .news-item img:hover {
+		    transform: scale(1.1);
+		}
+
 		@keyframes slideInRight {
 		    from {
 		        transform: translateX(100%);
@@ -173,6 +184,7 @@
 
         <!-- Main Content -->
         <div class="content">
+        	<img class="logo" src="Web Design Assets/Sidebar/Minimize/LogoSidebarMinimize.svg">
             <h1>Highlights</h1>
             <div class="highlights">
             	<div class="highlight-item" onclick="window.location.href='article1.html'">

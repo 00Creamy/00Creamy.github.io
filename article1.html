@@ -7,7 +7,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script src="article.js"></script>
     <style>
         body {
             background-image: linear-gradient(to bottom right, #232232, #595779);
@@ -31,10 +30,9 @@
         }
         .content{
             text-align: left;
-            margin-top: 3%;
-            margin-left: 10%;
-            margin-right: 10%;
-            padding: 0%;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 900px;
         }
         .content-maximize{
             text-align: left;
@@ -52,103 +50,103 @@
             
         }
         .more-articles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-    color: white;
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            color: white;
+        }
 
-.more-article-card {
-    display: flex;
-    background-color: #44475a;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    align-items: center;
-    gap: 15px;
-}
+        .more-article-card {
+            display: flex;
+            background-color: #44475a;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            gap: 15px;
+        }
 
-.more-article-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 6px;
-    object-fit: cover;
-}
+        .more-article-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
 
-.description {
-    flex-grow: 1;
-}
+        .description {
+            flex-grow: 1;
+        }
 
-.description .date {
-    font-size: 0.85em;
-    color: #8be9fd;
-    margin-bottom: 5px;
-}
+        .description .date {
+            font-size: 0.85em;
+            color: #8be9fd;
+            margin-bottom: 5px;
+        }
 
-.description .title {
-    font-size: 0.9em;
-    color: #f8f8f2;
-}
-.comments-section {
-    background-color: #282a36;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
-}
+        .description .title {
+            font-size: 0.9em;
+            color: #f8f8f2;
+        }
+        .comments-section {
+            background-color: #282a36;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            color: white;
+        }
 
-.comments-section h2 {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
+        .comments-section h2 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
 
-.comment-count {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #d9d9d9;
-}
+        .comment-count {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #d9d9d9;
+        }
 
-hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 10px 0;
-}
+        hr {
+            border: none;
+            border-top: 1px solid #444;
+            margin: 10px 0;
+        }
 
-.comment {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 15px;
-    gap: 15px;
-}
+        .comment {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 15px;
+            gap: 15px;
+        }
 
-.comment-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-.comment-content {
-    flex: 1;
-}
+        .comment-content {
+            flex: 1;
+        }
 
-.comment-author {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+        .comment-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-.comment-date {
-    font-size: 0.9rem;
-    color: #8be9fd;
-    margin-bottom: 10px;
-}
+        .comment-date {
+            font-size: 0.9rem;
+            color: #8be9fd;
+            margin-bottom: 10px;
+        }
 
-.comment-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #f8f8f2;
-}
+        .comment-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #f8f8f2;
+        }
     </style>
 </head>
 <body>
