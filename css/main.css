@@ -127,9 +127,9 @@ body {
 
 @keyframes textGlow {
     from {
-        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #6a1b9a, 0 0 20px #6a1b9a;
     }
     to {
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #ff9900, 0 0 40px #ff9900;
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #8e24aa, 0 0 40px #8e24aa;
     }
 }
